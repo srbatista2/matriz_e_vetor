@@ -48,7 +48,18 @@ public class Main {
                         elementos[i] = Integer.parseInt(JOptionPane.showInputDialog("Informe o elemento " + (i + 1) + " do vetor:"));
                     }
                     vetor.setVetor(elementos);
-                    JOptionPane.showMessageDialog(null, "Vetor: " + Arrays.toString(vetor.getVetor()));
+                    JOptionPane.showMessageDialog(null, "Vetor atual: " + Arrays.toString(vetor.getVetor()));
+                    String indiceString = JOptionPane.showInputDialog("Digite o índice do elemento a ser acessado:");
+                    int indice = Integer.parseInt(indiceString);
+                    int elemento = vetor.getElemento(indice);
+                    JOptionPane.showMessageDialog(null, "Elemento no índice " + indice + ": " + elemento);
+                    String indiceRemoverString = JOptionPane.showInputDialog("Digite o índice do elemento a ser removido:");
+                    int indiceRemover = Integer.parseInt(indiceRemoverString);
+                    vetor.removerElemento(indiceRemover);
+                    JOptionPane.showMessageDialog(null, "Elemento removido com sucesso!");
+                    JOptionPane.showMessageDialog(null, "Vetor após a remoção: " + Arrays.toString(vetor.getVetor()));
+                    vetor.ordenarVetor();
+                    JOptionPane.showMessageDialog(null, "Vetor ordenado: " + Arrays.toString(vetor.getVetor()));
                     break;
                 case 7:
                     System.exit(0);

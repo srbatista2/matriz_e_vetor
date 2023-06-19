@@ -26,11 +26,11 @@ public class Vetor {
     }
 
     public int getElemento(int indice) {
-        if (indice <= 0 && indice < tamanho) {
-            System.out.println("Indice inválido");
-            return 0;
+        if (indice >= 0 && indice < tamanho) {
+            return vetor[indice];
+        } else {
+            throw new IndexOutOfBoundsException("Índice fora dos limites do vetor.");
         }
-        return vetor[indice];
     }
 
     public void removerElemento(int indice) {
@@ -41,6 +41,7 @@ public class Vetor {
             tamanho--;
             vetor = Arrays.copyOf(vetor, tamanho);
         } else {
+            throw new IndexOutOfBoundsException("Índice fora dos limites do vetor.");
         }
     }
 
