@@ -2,7 +2,7 @@ package entities;
 
 public class Matriz {
 
-    private int[][] matriz = new int[3][3];
+    private int[][] matriz;
 
     public int[][] getMatriz() {
         return this.matriz;
