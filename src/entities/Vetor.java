@@ -1,4 +1,5 @@
 package entities;
+
 import java.util.Arrays;
 
 public class Vetor {
@@ -47,5 +48,3 @@ public class Vetor {
         Arrays.sort(vetor);
     }
 }
-
-
