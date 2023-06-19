@@ -48,6 +48,7 @@ public class Main {
                         elementos[i] = Integer.parseInt(JOptionPane.showInputDialog("Informe o elemento " + (i + 1) + " do vetor:"));
                     }
                     vetor.setVetor(elementos);
+                    JOptionPane.showMessageDialog(null, "Vetor: " + Arrays.toString(vetor.getVetor()));
                     break;
                 case 7:
                     System.exit(0);
