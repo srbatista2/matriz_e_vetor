@@ -1,3 +1,6 @@
+import entities.Matriz;
+import entities.MatrizOperacoes;
+
 import javax.swing.*;
 
 public class Main {
@@ -29,10 +32,10 @@ public class Main {
                     break;
                 case 4:
                     int[][] transposta = MatrizOperacoes.transposta(matriz.getMatriz());
-                    JOptionPane.showMessageDialog(null, "Matriz transposta: \n" + MatrizOperacoes.printMatriz(transposta));
+                    JOptionPane.showMessageDialog(null, "entities.Matriz transposta: \n" + MatrizOperacoes.printMatriz(transposta));
                     break;
                 case 5:
-                    JOptionPane.showMessageDialog(null, "Matriz: \n" + MatrizOperacoes.printMatriz(matriz.getMatriz()));
+                    JOptionPane.showMessageDialog(null, "entities.Matriz: \n" + MatrizOperacoes.printMatriz(matriz.getMatriz()));
                     break;
                 case 6:
                     System.exit(0);

@@ -1,3 +1,5 @@
+package entities;
+
 public class Matriz {
 
     private int[][] matriz = new int[3][3];
